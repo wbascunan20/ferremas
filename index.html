@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferremas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/login/inicio.html">
+
+</head>
+<body>
+    <div class="modal fade" id="modalBienvenida" tabindex="-1" aria-labelledby="modalBienvenidaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            
+            <!-- Encabezado del modal -->
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalBienvenidaLabel">¡Bienvenido a Ferremas!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+      
+            <!-- Cuerpo del modal -->
+            <div class="modal-body text-center">
+              <p>Estamos felices de tenerte aquí. Inicia sesión o regístrate para comenzar.</p>
+              <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="/login_and_register/index_login.php" class="btn btn-primary">Iniciar Sesión</a>
+                <a href="/login_and_register/index_login.php" class="btn btn-outline-primary">Registrarse</a>
+              </div>
+            </div>     
+          </div>
+        </div>
+      </div>
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">FERREMAS</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png"  class="menu-icono"alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="index-new.html">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="carrito">
+                        <div id=carrito>
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <div class="contenedor-botones">
+                                <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                                <a href="/carrito/iniciar_pago.php" class="btn-2">Pagar</a>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="submenu-cuenta">
+                        <img src="images/cuenta.png" alt="cuentaimg">
+                        <div id="cuenta">
+                            <table id="lista-cuenta">
+                                <thead></thead>
+                            </table>
+                            <a href="/login/inicio.html" id="iniciar-sesion-cuenta" class="btn-inicio-cuenta">Iniciar Sesión</a>
+                            <a href="/login/inicio.html" id="registrarse-cuenta" class="btn-registrarse-cuenta">Registrarse</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/right.jpg" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>Ofertas Especiales</h1>
+                <p>No te pierdas estas ofertas</p>
+                <a href="#" class="btn-1">Ver Más</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f1.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Bototos Construcción</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f2.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Cinturón de Herramientas</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f3.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Cascos</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+
+    </section>
+
+    <main class="products container" id="lista-1">
+        <h2>Productos</h2>
+
+        <div class="product-content">
+
+            <div class="product">
+                <img src="images/1.png" alt="">
+                <div class="product-txt">
+                    <h3>GEÓLOGO</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio"></p>
+                    <p>Precio: $10.000 CLP</p>
+                    <p id="precio-usd">USD: ...</p>
+                    <p id="precio-eur">EUR: ...</p>
+
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/2.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisyum</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/3.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisyum</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/4.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisyum</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/5.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisyum</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                    
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/6.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisyum</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="icons container">
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i1.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>CUIDADOS Y PRECAUCIONES</h3>
+                <p>
+                    "Secar colgado"
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i2.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>CUIDADOS Y PRECAUCIONES</h3>
+                <p>
+                    Nuestra plancha indica que puedes planchar con seguridad (a baja temperatura).
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i3.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>CUIDADOS Y PRECAUCIONES</h3>
+                <p>
+                    El colgador indica que la prenda debe secarse colgada, sin secadora.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog container">
+
+        <div class="blog-1">
+            <img src="images/b1.jpg" alt="">
+            <h3>“Cómo Hacer Mantenimiento Preventivo en Casa con Productos Ferremas”</h3>
+            <p>
+                Ahorrar dinero y mantener tu hogar en buen estado es más fácil de lo que parece. 
+                Aprende a hacer tareas simples de mantenimiento con productos disponibles 
+                en nuestra tienda online.
+
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="images/b2.jpg" alt="">
+            <h3>“Del Mostrador al Mouse: La Historia de Ferremas en Tiempos de Pandemia”</h3>
+            <p>
+                Descubre cómo Ferremas, una ferretería con años de trayectoria, 
+                se reinventó para enfrentar los desafíos de la pandemia. 
+                Desde atender en tienda física hasta ofrecer sus productos a un 
+                clic de distancia, esta es la historia de resiliencia, adaptación e innovación.
+
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="images/b3.jpg" alt="">
+            <h3>“Top 5 Herramientas Esenciales para el Hogar que Puedes Comprar en Línea”</h3>
+            <p>
+                ¿Estás pensando en armar tu caja de herramientas o renovar lo que ya tienes? 
+                Te mostramos las cinco herramientas básicas que no pueden faltar en tu hogar,
+                ¡y que puedes comprar en Ferremas sin salir de casa!
+
+            </p>
+        </div>        
+    </section>
+    
+    <ul class="copyright">
+        <li>&copy; Untitled. All rights reserved to FERREMAS</li><li>Design: <a href="index.html">MUGIWARAS</a></li>
+    </ul>
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="scrip.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const modal = new bootstrap.Modal(document.getElementById('modalBienvenida'));
+            modal.show();
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/conversion_moneda.js"></script>
+</body>
+</html>
